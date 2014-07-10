@@ -1,12 +1,11 @@
 Rails.application.routes.draw do
+
+  get '/' => "home#index"
+  get '/buy' => "home#buy"
+  get '/return' => "home#return" 
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-
-get '/' => "home#index"
-
-get '/garage' => "home#garage"
-
-get '/porch' => "home#porch"
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
